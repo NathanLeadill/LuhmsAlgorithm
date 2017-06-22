@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Luhms Algorithm</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">Welcome to Luhm's algorithm</h1>
+        <p>This page simply checks an entered value against the algorithm.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+
+      <div class="container">
+        <div class="alert alert-success" role="alert" style="display: none;">
+          <strong>Yep</strong> the number <span class="input_number"></span> looks like a valid luhms number.
+        </div>
+        <div class="alert alert-danger" role="alert" style="display: none;">
+          <strong>Woops</strong> the number <span class="input_number"></span> looks like a invalid!
+        </div>
+      </div>
+      
+    <hr />
+
+    <div class="container">
+      <div class="row">
+        <div class="jumbotron">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-9">
+                <input class="form-control" type="number" placeholder="Enter the number you wish to check against the algorithm here" name="luhms_input" id="luhms_input" />
+              </div>
+              <div class="col-md-3">
+                <button class="btn btn-success" id="luhms_submit">Check!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <hr>
+
+      <footer>
+        <p>&copy; Nathan Leadill 2017</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
