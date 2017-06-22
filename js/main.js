@@ -2,17 +2,22 @@ $(document).ready(function()
 {
   $('#luhms_submit').on('click', function()
   {
-    $('.alert').css('display', 'none');
-    var valid = validate($('#luhms_input').val());
-    $('.input_number').text($('#luhms_input').val());
-    if(valid)
+    var string = $('#luhms_input').val();
+    if(string.length > 1 && string.indexOf('e'))
     {
-      $('.alert-success').css('display', 'block');
+      $('.alert').css('display', 'none');
+      var valid = validate(string);
+      $('.input_number').text(string);
+      if(valid)
+      {
+        $('.alert-success').css('display', 'block');
+      }
+      else
+      {
+        $('.alert-danger').css('display', 'block');
+      }
     }
-    else
-    {
-      $('.alert-danger').css('display', 'block');
-    }
+
   });
 });
 
